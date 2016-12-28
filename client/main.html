@@ -1,0 +1,32 @@
+<head>
+  <title>boyyo</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/0a118b3e0b.js"></script>
+</head>
+
+<body>
+  {{> hello}}
+</body>
+
+<template name="hello">
+    <h2 class="container-title"><center><img src="img/avatar.png" width="40px"><br>Hello Jarvis</center></h2>
+<div class="container">
+    <input id="speech" type="text">
+    <button id="rec" class="btn"><i class="fa fa-microphone" aria-hidden="true"></i>
+</button>
+    <div id="spokenResponse" class="spoken-response">
+      <div class="spoken-response__text"></div>
+    </div>
+  </div>
+  <div class="debug">
+    <div class="debug__btn btn">
+      Debug JSON results
+    </div>
+    <div class="debug__content">
+      <textarea id="response" cols="40" rows="20"></textarea>
+    </div>
+  </div>
+
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200" rel="stylesheet" type="text/css">
+</template>
